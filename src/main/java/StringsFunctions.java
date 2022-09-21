@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 /**
  * 1)
  *This exercise is to test your understanding of Java Strings. A sample String declaration:

@@ -1,3 +1,5 @@
+package strings;
+
 public class Palindrome {
 
     public boolean solution(String inputString) {
