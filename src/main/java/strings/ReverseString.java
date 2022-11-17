@@ -1,3 +1,5 @@
+package strings;
+
 import java.text.FieldPosition;
 import java.text.NumberFormat;
 import java.text.ParsePosition;
