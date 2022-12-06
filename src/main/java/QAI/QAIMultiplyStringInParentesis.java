@@ -33,7 +33,8 @@ public class QAIMultiplyStringInParentesis {
             multiplier = Character.getNumericValue(inputString.charAt(startIndex - 1));
             String multipliedString = inputString.substring(startIndex + 1, endIndex);
             System.out.println(multipliedString);
-            inputString = inputString.replace(inputString.substring(startIndex - 1, endIndex + 1), multipliedString.repeat(multiplier));
+            inputString = inputString.replace(inputString.substring(startIndex - 1, endIndex + 1),
+                    multipliedString.repeat(multiplier));
             System.out.println(inputString);
         }
         return inputString;

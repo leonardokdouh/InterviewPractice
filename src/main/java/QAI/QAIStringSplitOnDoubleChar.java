@@ -6,15 +6,15 @@ package QAI;
  * Example :   given    asdfasdfJJasdfasdfasdf
  * Output:     asdfasdf         asdfasdfasdf
  *
+
  */
 
-public class QAISplitOnDoubleCharRegex {
+
+
+public class QAIStringSplitOnDoubleChar {
 
     public static void main(String[] args) {
-
-        String regex = "([a-ZA-A])\\1";
-        String regex2 = "\\([^()]+\\)\n";
-
+        lenghts("asasassJJfasdf");
 
     }
 
@@ -33,7 +33,4 @@ public class QAISplitOnDoubleCharRegex {
         System.out.println(right);
         return new int[]{left, right};
     }
-
-
-
 }

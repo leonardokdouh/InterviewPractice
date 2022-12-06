@@ -8,7 +8,7 @@ package QAI;
 public class QAISplitAndSumNumber {
     public static void main(String[] args) {
 
-        System.out.println(sumNumbers(1050));
+        System.out.println(sumNumbers(21));
     }
 
 

@@ -10,8 +10,10 @@ Given a ticket number n, determine if it's lucky or not.
      */
     public static void main(String[] args) {
         int number = 1230;
-
+        int numb= 1233;
         System.out.println(isLuky(number));
+
+        System.out.println(findingIntLenght(numb));
     }
 
     public static boolean isLuky(int n){
@@ -33,5 +35,17 @@ Given a ticket number n, determine if it's lucky or not.
         lucky =(right==left)? true: false;
 
         return lucky;
+    }
+
+
+    public static int findingIntLenght(int a){
+        int count =0;
+
+        while (a !=0){
+            a= a/10;
+            count++;
+        }
+
+        return count;
     }
 }
