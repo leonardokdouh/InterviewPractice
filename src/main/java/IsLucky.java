@@ -32,6 +32,8 @@ Given a ticket number n, determine if it's lucky or not.
             right += Integer.parseInt(String.valueOf(tempNumber.charAt(i)));
         }
 
+        System.out.println("here i am printing the right: " + right);
+
         lucky =(right==left)? true: false;
 
         return lucky;

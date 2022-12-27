@@ -19,27 +19,17 @@ import java.util.*;
  4) 1 popcorn & 1 cofe
  5) 1 popcorn
  */
-
-
-
-
 public class QAICoffeCake {
 
-
         public static HashMap<String, Integer> menu = new HashMap<>();
-
         public static final int MINIMUM_VALUE = 100;
-
         public static void main(String[] args) {
             menu.put("coffee", 100);
             menu.put("cake", 200);
             menu.put("popcorn", 225);
 
             printAllCombinations();
-
-
         }
-
 
     public static void printAllCombinations(){
         HashSet<List<String>> solutionSet = new HashSet<>();
@@ -49,7 +39,6 @@ public class QAICoffeCake {
             firstStep.add(entry.getKey());
             availableCombination(coins - entry.getValue(), firstStep, solutionSet);
         }
-
         System.out.println(solutionSet);
     }
 

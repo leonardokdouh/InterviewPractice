@@ -1,6 +1,8 @@
+package QAI;
+
 import java.util.Arrays;
 
-public class SortByHeight {
+public class QAISortSelection {
 
     /*
     Some people are standing in a row in a park. There are trees between them which cannot be moved.
@@ -16,11 +18,8 @@ public class SortByHeight {
     }
 
     public static int[] solution(int[] a) {
-
-
         for (int i = 0; i < a.length-1; i++) {
             int positionToSwip = i;
-
             int lower = a[i];
 
             for (int j = i + 1; j < a.length; j++) {

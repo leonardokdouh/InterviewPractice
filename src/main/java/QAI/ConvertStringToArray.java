@@ -21,7 +21,10 @@ public class ConvertStringToArray {
         String [] myLettersArray = word.split("");
 
         System.out.println("print using deep= "+Arrays.deepToString(myLettersArray));
+
+        System.out.println("Printing using Arrays.toString = " +Arrays.toString(myFirstArray));
         System.out.println("Printing using a foreach cicle");
+
         for(String letters: myLettersArray){
             System.out.print(letters);
         }
@@ -36,6 +39,8 @@ public class ConvertStringToArray {
             theArray[i] = String.valueOf(word.charAt(i));
         }
 
-        System.out.print(Arrays.deepToString(theArray));
+        System.out.println(Arrays.deepToString(theArray));
+
+        System.out.println("printing using arrays.toString" + Arrays.toString(theArray));
     }
 }

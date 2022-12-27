@@ -11,8 +11,8 @@ public class ConvertStringToIntAndChar {
 
         //Using parseInt
 
-        int i = Integer.parseInt(number);
-        System.out.println("Using parseInt method "+ i);
+        int numberCero = Integer.parseInt(number);
+        System.out.println("Using parseInt method "+ numberCero);
 
         //converting String into Integer using Integer.valueOf() method
 
@@ -24,22 +24,25 @@ public class ConvertStringToIntAndChar {
         //String/Int to char [] of ints.
         int numerito = 1010098;
         String numer = String.valueOf(numerito);
+        int multiplier =10;
 
-        char[] intArray = new char[numer.length()];
+        int[] intArray = new int[numer.length()];
+        System.out.println(numer.length());
 
-        for(int j=0; j<numer.length(); j++){
-            intArray[j]= (char) Character.digit(numer.charAt(j), 10);
+
+        for( int i=0; i<numer.length(); i++){
+
+            intArray[i]= Integer.parseInt(String.valueOf(numer.charAt(i)));
+
         }
 
-        for (char asd : intArray){
+
+        for (int asd : intArray){
             System.out.print(asd);
         }
 
-        int addingEveryNumber= 0;
-        for(int k=0; k<intArray.length; k++){
-            addingEveryNumber+= intArray.toString().charAt(k);
-        }
-        System.out.println(numerito);
+        System.out.println(Arrays.toString(intArray));
+
 
     }
 }
