@@ -35,7 +35,7 @@ public class QAIAnagramHashMap {
 
             if(myMap.containsKey(one.charAt(i))){
                 myMap.put(one.charAt(i), myMap.get(one.charAt(i))+1);
-            }else {
+            } else {
                     myMap.put(one.charAt(i), 1);
             }
             if(mySecondMap.containsKey(two.charAt(i))){

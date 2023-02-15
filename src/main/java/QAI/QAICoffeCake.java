@@ -30,10 +30,9 @@ public class QAICoffeCake {
 
             printAllCombinations();
         }
-
     public static void printAllCombinations(){
         HashSet<List<String>> solutionSet = new HashSet<>();
-        int coins = 300;
+        int coins = 400;
         for(Map.Entry<String, Integer> entry : menu.entrySet()){
             List<String> firstStep = new ArrayList<>();
             firstStep.add(entry.getKey());
@@ -41,7 +40,6 @@ public class QAICoffeCake {
         }
         System.out.println(solutionSet);
     }
-
     public static void availableCombination(int coins, List<String> currentBranch, HashSet<List<String>> solutionSet){
         if(coins < MINIMUM_VALUE){
             solutionSet.add(currentBranch);

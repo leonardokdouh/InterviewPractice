@@ -10,10 +10,17 @@ public class QAIImages {
                             {1, 1, 1, 0, 0, 0, 1},
                             {1, 1, 1, 0, 0, 0, 1},
                             {1, 1, 1, 1, 1, 1, 1}};
-            int[] result = solution(test);
-            Arrays.stream(result).forEach(pos -> {
-                System.out.println(pos);
-            });
+
+            System.out.println("Las filas son "+ test.length);
+
+            System.out.println("Las column son "+test[1].length);
+
+            //int[] result = solution(test);
+
+
+           // Arrays.stream(result).forEach(pos -> {
+            //   System.out.println(pos);
+            //});
 
         }
         public static int[] solution(int[][] inputArray){

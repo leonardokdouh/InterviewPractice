@@ -23,7 +23,7 @@ public class QAIAnagramNumb2 {
     public static void multipleAnagrams(String[] inputArray) {
         for (int i = 0; i < inputArray.length; i++) {
             for (int j = i + 1; j < inputArray.length; j++) {
-                if (i != j && isAnagram(inputArray[i], inputArray[j])) {
+                if (isAnagram(inputArray[i], inputArray[j])) {
                     System.out.println(inputArray[i] + " and " + inputArray[j] + " are anagrams.");
                 } else {
                         System.out.println(inputArray[i] + " and " + inputArray[j] + " are not anagrams.");
